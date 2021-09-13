@@ -57,6 +57,8 @@ time.sleep(1)
 activateDropdown = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div[1]/div[1]')
 activateDropdown.click()
 
+time.sleep(1)
+
 findName = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[2]/div[30]')
 findName.click()
 
