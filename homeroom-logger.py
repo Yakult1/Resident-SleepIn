@@ -36,18 +36,29 @@ LogInButton.click()
 
 time.sleep(10)
 
-continueButton = driver.find_element_by_xpath('//[@id="view_container"]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')
+continueButton = driver.find_element_by_xpath('//*[@id="view_container"]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')
 continueButton.click()
 
 time.sleep(4)
 
-nextButton2 = driver.find_element_by_xpath('//[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span')
+nextButton2 = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span')
 nextButton2.click()
 
 time.sleep(1)
 
-nextButton3 = driver.find_element_by_xpath('//[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div[2]/span/span')
+radio1 = driver.find_element_by_xpath('//*[@id="i8"]/div[3]/div')
+radio1.click()
+
+nextButton3 = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div[2]/span/span')
 nextButton3.click()
+
+time.sleep(1)
+
+activateDropdown = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div[1]/div[1]')
+activateDropdown.click()
+
+findName = driver.find_element_by_xpath('//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[2]/div[30]')
+findName.click()
 
 time.sleep(1)
 
